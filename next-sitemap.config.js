@@ -1,6 +1,6 @@
 // /** @type {import('next-sitemap').IConfig} */
 // module.exports = {
-//   siteUrl: 'https://moviesandtvshows.vercel.app/',
+//   siteUrl: 'https://moviesntvshows.netlify.app/',
 //   changefreq: 'daily',
 //   sitemapSize: 7000, // Limit of URLs in each sitemap file
 //   // generateRobotsTxt: true, // Optionally generate robots.txt
@@ -26,7 +26,7 @@
 
 // /** @type {import('next-sitemap').IConfig} */
 // module.exports = {
-//   siteUrl: 'https://moviesandtvshows.vercel.app/',
+//   siteUrl: 'https://moviesntvshows.netlify.app/',
 //   changefreq: 'daily',
 //   priority: 0.9, // Set priority to just below the highest value
 //   // generateRobotsTxt: true,
@@ -37,7 +37,7 @@
 
 // /** @type {import('next-sitemap').IConfig} */
 // module.exports = {
-//   siteUrl: 'https://moviesandtvshows.vercel.app/', // Replace with your actual domain
+//   siteUrl: 'https://moviesntvshows.netlify.app/', // Replace with your actual domain
 //   generateRobotsTxt: true, // Generates robots.txt file
 //   // Optionally define other options such as changefreq and priority
 //   exclude: ['/api/*'], // Exclude any routes you don't want in the sitemap
@@ -46,7 +46,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://moviesandtvshows.vercel.app/', // Replace with your actual live domain
+  siteUrl: 'https://moviesntvshows.netlify.app/', // Replace with your actual live domain
   changefreq: 'daily',
   sitemapSize: 7000,
   // generateRobotsTxt: true, // Optionally generate robots.txt

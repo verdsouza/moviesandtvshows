@@ -98,49 +98,49 @@ export default function adult({ adultData }) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://moviesandtvshows.vercel.app/#organization",
+        "@id": "https://moviesntvshows.netlify.app/#organization",
         name: "Movies & Tv Shows™ – Adult Section.",
-        url: "https://moviesandtvshows.vercel.app/",
+        url: "https://moviesntvshows.netlify.app/",
       },
       {
         "@type": "WebSite",
-        "@id": "https://moviesandtvshows.vercel.app/adult#website",
-        url: "https://moviesandtvshows.vercel.app/adult",
+        "@id": "https://moviesntvshows.netlify.app/adult#website",
+        url: "https://moviesntvshows.netlify.app/adult",
         name: "Movies & Tv Shows™ – Adult Section.",
         publisher: {
           "@type": "Organization",
-          "@id": "https://moviesandtvshows.vercel.app/#organization",
+          "@id": "https://moviesntvshows.netlify.app/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+          target: "https://moviesntvshows.netlify.app/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "WebPage",
-        "@id": "https://moviesandtvshows.vercel.app/adult#webpage",
-        url: "https://moviesandtvshows.vercel.app/adult",
+        "@id": "https://moviesntvshows.netlify.app/adult#webpage",
+        url: "https://moviesntvshows.netlify.app/adult",
         name: "Movies & Tv Shows",
         datePublished: "2024-01-13T13:00:00+00:00",
         dateModified: "2024-01-13T13:13:00+00:00",
         isPartOf: {
-          "@id": "https://moviesandtvshows.vercel.app/#website",
+          "@id": "https://moviesntvshows.netlify.app/#website",
         },
         inLanguage: "en-US",
         mainEntity: [
           {
             "@type": "Article",
-            "@id": "https://moviesandtvshows.vercel.app/adult",
-            url: "https://moviesandtvshows.vercel.app/adult",
+            "@id": "https://moviesntvshows.netlify.app/adult",
+            url: "https://moviesntvshows.netlify.app/adult",
             headline: "Movies & Tv Shows™",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
             publisher: {
               "@type": "Organization",
-              "@id": "https://moviesandtvshows.vercel.app/#organization",
+              "@id": "https://moviesntvshows.netlify.app/#organization",
               name: "Movies & Tv Shows™ – Adult Section.",
-              url: "https://moviesandtvshows.vercel.app/",
+              url: "https://moviesntvshows.netlify.app/",
             },
           },
         ],
@@ -159,68 +159,68 @@ export default function adult({ adultData }) {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://moviesandtvshows.vercel.app/adult",
-        url: "https://moviesandtvshows.vercel.app/adult",
+        "@id": "https://moviesntvshows.netlify.app/adult",
+        url: "https://moviesntvshows.netlify.app/adult",
         name: "Movies & Tv Shows™ – Adult Section",
-        isPartOf: { "@id": "https://moviesandtvshows.vercel.app/#website" },
-        about: { "@id": "https://moviesandtvshows.vercel.app/#organization" },
+        isPartOf: { "@id": "https://moviesntvshows.netlify.app/#website" },
+        about: { "@id": "https://moviesntvshows.netlify.app/#organization" },
         primaryImageOfPage: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage",
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage",
         },
-        thumbnailUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        thumbnailUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         datePublished: "2023-07-02T18:30:00+00:00",
         dateModified: "2024-09-24T05:11:20+00:00",
         breadcrumb: {
-          "@id": "https://moviesandtvshows.vercel.app/adult#breadcrumb",
+          "@id": "https://moviesntvshows.netlify.app/adult#breadcrumb",
         },
         inLanguage: "en-US",
         potentialAction: [
           {
             "@type": "ReadAction",
-            target: ["https://moviesandtvshows.vercel.app/adult"],
+            target: ["https://moviesntvshows.netlify.app/adult"],
           },
         ],
       },
       {
         "@type": "ImageObject",
         inLanguage: "en-US",
-        "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
-        url: "https://moviesandtvshows.vercel.app/og_image.jpg",
-        contentUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        "@id": "https://moviesntvshows.netlify.app/#primaryimage",
+        url: "https://moviesntvshows.netlify.app/og_image.jpg",
+        contentUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         width: 1280,
         height: 720,
         caption: "Movies & Tv Shows™ – Adult Section",
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://moviesandtvshows.vercel.app/adult#breadcrumb",
+        "@id": "https://moviesntvshows.netlify.app/adult#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "adult",
-            item: "https://moviesandtvshows.vercel.app/adult",
+            item: "https://moviesntvshows.netlify.app/adult",
           },
         ],
       },
       {
         "@type": "WebSite",
-        "@id": "https://moviesandtvshows.vercel.app/#website",
-        url: "https://moviesandtvshows.vercel.app/",
+        "@id": "https://moviesntvshows.netlify.app/#website",
+        url: "https://moviesntvshows.netlify.app/",
         name: "Movies & Tv Shows™ – Adult Section",
         description:
           "",
-        publisher: { "@id": "https://moviesandtvshows.vercel.app/#organization" },
+        publisher: { "@id": "https://moviesntvshows.netlify.app/#organization" },
         potentialAction: [
           {
             "@type": "SearchAction",
             target: {
               "@type": "EntryPoint",
               urlTemplate:
-                "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+                "https://moviesntvshows.netlify.app/?s={search_term_string}",
             },
             "query-input": "required name=search_term_string",
           },
@@ -229,21 +229,21 @@ export default function adult({ adultData }) {
       },
       {
         "@type": "Organization",
-        "@id": "https://moviesandtvshows.vercel.app/#organization",
+        "@id": "https://moviesntvshows.netlify.app/#organization",
         name: "Movies & Tv Shows™ – Adult Section",
-        url: "https://moviesandtvshows.vercel.app/",
+        url: "https://moviesntvshows.netlify.app/",
         logo: {
           "@type": "ImageObject",
           inLanguage: "en-US",
-          "@id": "https://moviesandtvshows.vercel.app/#logo",
-          url: "https://moviesandtvshows.vercel.app/logo.png",
-          contentUrl: "https://moviesandtvshows.vercel.app/logo.png",
+          "@id": "https://moviesntvshows.netlify.app/#logo",
+          url: "https://moviesntvshows.netlify.app/logo.png",
+          contentUrl: "https://moviesntvshows.netlify.app/logo.png",
           width: 280,
           height: 100,
           caption: "Movies & Tv Shows™ – Adult Section",
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#logo",
+          "@id": "https://moviesntvshows.netlify.app/#logo",
         },
       },
     ],
@@ -258,7 +258,7 @@ export default function adult({ adultData }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -299,7 +299,7 @@ export default function adult({ adultData }) {
           name="description"
           content="Stream HD movies and TV series for free on Movies & Tv Shows™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
-        <link rel="canonical" href="https://moviesandtvshows.vercel.app/adult" />
+        <link rel="canonical" href="https://moviesntvshows.netlify.app/adult" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
@@ -308,7 +308,7 @@ export default function adult({ adultData }) {
         />
         <meta
           property="og:url"
-          content="https://moviesandtvshows.vercel.app/adult"
+          content="https://moviesntvshows.netlify.app/adult"
         />
         <meta
           property="og:site_name"
@@ -316,7 +316,7 @@ export default function adult({ adultData }) {
         />
         <meta
           property="og:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -333,7 +333,7 @@ export default function adult({ adultData }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -346,7 +346,7 @@ export default function adult({ adultData }) {
         />
         <meta
           name="twitter:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta
           name="google-site-verification"

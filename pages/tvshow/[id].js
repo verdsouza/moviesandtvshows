@@ -75,11 +75,11 @@ const tvshowSchema = (tvshowItem) =>
         name: "Movies & Tv Shows™ - Online. Stream. Download..",
         publisher: {
           "@type": "Organization",
-          "@id": "https://moviesandtvshows.vercel.app/#organization"
+          "@id": "https://moviesntvshows.netlify.app/#organization"
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+          target: "https://moviesntvshows.netlify.app/?s={search_term_string}",
           "query-input": "required name=search_term_string"
         },
         inLanguage: "en-US"
@@ -90,19 +90,19 @@ const tvshowSchema = (tvshowItem) =>
         url: tvshowItem.siteurl,
         name: "Movies & Tv Shows™ - Online. Stream. Download..",
         isPartOf: {
-          "@id": "https://moviesandtvshows.vercel.app/#website"
+          "@id": "https://moviesntvshows.netlify.app/#website"
         },
         primaryImageOfPage: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage"
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage"
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage"
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage"
         },
-        thumbnailUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        thumbnailUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         datePublished: tvshowItem.datePublished,
         dateModified: tvshowItem.dateModified,
         breadcrumb: {
-          "@id": "https://moviesandtvshows.vercel.app/#breadcrumb"
+          "@id": "https://moviesntvshows.netlify.app/#breadcrumb"
         },
         inLanguage: "en-US",
         potentialAction: [
@@ -134,31 +134,31 @@ const tvshowSchema = (tvshowItem) =>
         },
         publisher: {
           "@type": "Organization",
-          "@id": "https://moviesandtvshows.vercel.app/#organization",
+          "@id": "https://moviesntvshows.netlify.app/#organization",
           name: "Movies & Tv Shows™ - Online. Stream. Download..",
-          url: "https://moviesandtvshows.vercel.app"
+          url: "https://moviesntvshows.netlify.app"
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage"
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage"
         }
       },
       {
         "@type": "ImageObject",
-        "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
-        url: "https://moviesandtvshows.vercel.app/og_image.jpg",
-        contentUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        "@id": "https://moviesntvshows.netlify.app/#primaryimage",
+        url: "https://moviesntvshows.netlify.app/og_image.jpg",
+        contentUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         width: 1280,
         height: 720
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://moviesandtvshows.vercel.app/#breadcrumb",
+        "@id": "https://moviesntvshows.netlify.app/#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://moviesandtvshows.vercel.app/"
+            item: "https://moviesntvshows.netlify.app/"
           }
         ]
       }
@@ -322,7 +322,7 @@ const [Id, season, episode] = currentTvShowId.split("/");
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -378,7 +378,7 @@ const [Id, season, episode] = currentTvShowId.split("/");
         />
         <meta
           property="og:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -395,7 +395,7 @@ const [Id, season, episode] = currentTvShowId.split("/");
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -408,7 +408,7 @@ const [Id, season, episode] = currentTvShowId.split("/");
         />
         <meta
           name="twitter:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta
           name="google-site-verification"

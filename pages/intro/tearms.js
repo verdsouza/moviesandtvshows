@@ -48,29 +48,29 @@ const Tearms = () => {
       },
       {
         "@type": "Organization",
-        "@id": "https://moviesandtvshows.vercel.app/#organization",
+        "@id": "https://moviesntvshows.netlify.app/#organization",
         name: "Movies & Tv Shows™ - Explore. Discover. Online.",
-        url: "https://moviesandtvshows.vercel.app",
+        url: "https://moviesntvshows.netlify.app",
       },
       {
         "@type": "WebSite",
-        "@id": "https://moviesandtvshows.vercel.app/#website",
-        url: "https://moviesandtvshows.vercel.app",
+        "@id": "https://moviesntvshows.netlify.app/#website",
+        url: "https://moviesntvshows.netlify.app",
         name: "Movies & Tv Shows™ - Explore. Discover. Online.",
         publisher: {
           "@type": "Organization",
-          "@id": "https://moviesandtvshows.vercel.app/#organization",
+          "@id": "https://moviesntvshows.netlify.app/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+          target: "https://moviesntvshows.netlify.app/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "WebPage",
-        "@id": "https://moviesandtvshows.vercel.app/#webpage",
-        url: "https://moviesandtvshows.vercel.app/",
+        "@id": "https://moviesntvshows.netlify.app/#webpage",
+        url: "https://moviesntvshows.netlify.app/",
         name: "Movie",
         datePublished: "2024-01-13T13:00:00+00:00",
         dateModified: "2024-01-13T13:13:00+00:00",
@@ -88,14 +88,14 @@ const Tearms = () => {
           },
         },
         isPartOf: {
-          "@id": "https://moviesandtvshows.vercel.app/#website",
+          "@id": "https://moviesntvshows.netlify.app/#website",
         },
         inLanguage: "en-US",
         mainEntity: [
           {
             "@type": "Article",
-            "@id": "https://moviesandtvshows.vercel.app/",
-            url: "https://moviesandtvshows.vercel.app/",
+            "@id": "https://moviesntvshows.netlify.app/",
+            url: "https://moviesntvshows.netlify.app/",
             headline: "Movie",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
@@ -114,15 +114,15 @@ const Tearms = () => {
             },
             publisher: {
               "@type": "Organization",
-              "@id": "https://moviesandtvshows.vercel.app/#organization",
+              "@id": "https://moviesntvshows.netlify.app/#organization",
               name: "Movies & Tv Shows™ - Explore. Discover. Online.",
-              url: "https://moviesandtvshows.vercel.app",
+              url: "https://moviesntvshows.netlify.app",
             },
           },
           {
             "@type": "Article",
-            "@id": "https://moviesandtvshows.vercel.app/",
-            url: "https://moviesandtvshows.vercel.app/",
+            "@id": "https://moviesntvshows.netlify.app/",
+            url: "https://moviesntvshows.netlify.app/",
             headline: "Tvshow",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
@@ -141,15 +141,15 @@ const Tearms = () => {
             },
             publisher: {
               "@type": "Organization",
-              "@id": "https://moviesandtvshows.vercel.app/#organization",
+              "@id": "https://moviesntvshows.netlify.app/#organization",
               name: "Movies & Tv Shows™ - Explore. Discover. Online.",
-              url: "https://moviesandtvshows.vercel.app",
+              url: "https://moviesntvshows.netlify.app",
             },
           },
           {
             "@type": "Article",
-            "@id": "https://moviesandtvshows.vercel.app/",
-            url: "https://moviesandtvshows.vercel.app/",
+            "@id": "https://moviesntvshows.netlify.app/",
+            url: "https://moviesntvshows.netlify.app/",
             headline: "Adult",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
@@ -168,9 +168,9 @@ const Tearms = () => {
             },
             publisher: {
               "@type": "Organization",
-              "@id": "https://moviesandtvshows.vercel.app/#organization",
+              "@id": "https://moviesntvshows.netlify.app/#organization",
               name: "Movies & Tv Shows™ - Explore. Discover. Online.",
-              url: "https://moviesandtvshows.vercel.app",
+              url: "https://moviesntvshows.netlify.app",
             },
           },
         ],
@@ -186,7 +186,7 @@ const Tearms = () => {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -225,7 +225,7 @@ const Tearms = () => {
 
         <link
           rel="canonical"
-          href="https://moviesandtvshows.vercel.app/intro/tearms"
+          href="https://moviesntvshows.netlify.app/intro/tearms"
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -236,12 +236,12 @@ const Tearms = () => {
         />
         <meta
           property="og:url"
-          content="https://moviesandtvshows.vercel.app/intro/tearms/"
+          content="https://moviesntvshows.netlify.app/intro/tearms/"
         />
         <meta property="og:site_name" content="Movies & Tv Shows™ " />
         <meta
           property="og:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="720" />
@@ -255,7 +255,7 @@ const Tearms = () => {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta

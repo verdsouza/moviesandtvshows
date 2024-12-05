@@ -94,49 +94,49 @@ export default function hindiDubbed({ hindiDubbedData }) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://moviesandtvshows.vercel.app/#organization",
+        "@id": "https://moviesntvshows.netlify.app/#organization",
         name: "Movies & Tv Shows™ – Hindi Dubbed Section.",
-        url: "https://moviesandtvshows.vercel.app/",
+        url: "https://moviesntvshows.netlify.app/",
       },
       {
         "@type": "WebSite",
-        "@id": "https://moviesandtvshows.vercel.app/hindiDubbed#website",
-        url: "https://moviesandtvshows.vercel.app/hindiDubbed",
+        "@id": "https://moviesntvshows.netlify.app/hindiDubbed#website",
+        url: "https://moviesntvshows.netlify.app/hindiDubbed",
         name: "Movies & Tv Shows™ – Hindi Dubbed Section.",
         publisher: {
           "@type": "Organization",
-          "@id": "https://moviesandtvshows.vercel.app/#organization",
+          "@id": "https://moviesntvshows.netlify.app/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+          target: "https://moviesntvshows.netlify.app/?s={search_term_string}",
           "query-input": "required name=search_term_string",
         },
       },
       {
         "@type": "WebPage",
-        "@id": "https://moviesandtvshows.vercel.app/hindiDubbed#webpage",
-        url: "https://moviesandtvshows.vercel.app/hindiDubbed",
+        "@id": "https://moviesntvshows.netlify.app/hindiDubbed#webpage",
+        url: "https://moviesntvshows.netlify.app/hindiDubbed",
         name: "Movies & Tv Shows",
         datePublished: "2024-01-13T13:00:00+00:00",
         dateModified: "2024-01-13T13:13:00+00:00",
         isPartOf: {
-          "@id": "https://moviesandtvshows.vercel.app/#website",
+          "@id": "https://moviesntvshows.netlify.app/#website",
         },
         inLanguage: "en-US",
         mainEntity: [
           {
             "@type": "Article",
-            "@id": "https://moviesandtvshows.vercel.app/hindiDubbed",
-            url: "https://moviesandtvshows.vercel.app/hindiDubbed",
+            "@id": "https://moviesntvshows.netlify.app/hindiDubbed",
+            url: "https://moviesntvshows.netlify.app/hindiDubbed",
             headline: "Movies & Tv Shows™",
             datePublished: "2024-01-13T13:00:00+00:00",
             dateModified: "2024-01-13T13:13:00+00:00",
             publisher: {
               "@type": "Organization",
-              "@id": "https://moviesandtvshows.vercel.app/#organization",
+              "@id": "https://moviesntvshows.netlify.app/#organization",
               name: "Movies & Tv Shows™ – Hindi Dubbed Section.",
-              url: "https://moviesandtvshows.vercel.app/",
+              url: "https://moviesntvshows.netlify.app/",
             },
           },
         ],
@@ -155,68 +155,68 @@ export default function hindiDubbed({ hindiDubbedData }) {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://moviesandtvshows.vercel.app/hindiDubbed",
-        url: "https://moviesandtvshows.vercel.app/hindiDubbed",
+        "@id": "https://moviesntvshows.netlify.app/hindiDubbed",
+        url: "https://moviesntvshows.netlify.app/hindiDubbed",
         name: "Movies & Tv Shows™ – Hindi Dubbed Section",
-        isPartOf: { "@id": "https://moviesandtvshows.vercel.app/#website" },
-        about: { "@id": "https://moviesandtvshows.vercel.app/#organization" },
+        isPartOf: { "@id": "https://moviesntvshows.netlify.app/#website" },
+        about: { "@id": "https://moviesntvshows.netlify.app/#organization" },
         primaryImageOfPage: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage",
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
+          "@id": "https://moviesntvshows.netlify.app/#primaryimage",
         },
-        thumbnailUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        thumbnailUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         datePublished: "2023-07-02T18:30:00+00:00",
         dateModified: "2024-09-24T05:11:20+00:00",
         breadcrumb: {
-          "@id": "https://moviesandtvshows.vercel.app/hindiDubbed#breadcrumb",
+          "@id": "https://moviesntvshows.netlify.app/hindiDubbed#breadcrumb",
         },
         inLanguage: "en-US",
         potentialAction: [
           {
             "@type": "ReadAction",
-            target: ["https://moviesandtvshows.vercel.app/hindiDubbed"],
+            target: ["https://moviesntvshows.netlify.app/hindiDubbed"],
           },
         ],
       },
       {
         "@type": "ImageObject",
         inLanguage: "en-US",
-        "@id": "https://moviesandtvshows.vercel.app/#primaryimage",
-        url: "https://moviesandtvshows.vercel.app/og_image.jpg",
-        contentUrl: "https://moviesandtvshows.vercel.app/og_image.jpg",
+        "@id": "https://moviesntvshows.netlify.app/#primaryimage",
+        url: "https://moviesntvshows.netlify.app/og_image.jpg",
+        contentUrl: "https://moviesntvshows.netlify.app/og_image.jpg",
         width: 1280,
         height: 720,
         caption: "Movies & Tv Shows™ – Hindi Dubbed Section",
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://moviesandtvshows.vercel.app/hindiDubbed#breadcrumb",
+        "@id": "https://moviesntvshows.netlify.app/hindiDubbed#breadcrumb",
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
             name: "hindiDubbed",
-            item: "https://moviesandtvshows.vercel.app/hindiDubbed",
+            item: "https://moviesntvshows.netlify.app/hindiDubbed",
           },
         ],
       },
       {
         "@type": "WebSite",
-        "@id": "https://moviesandtvshows.vercel.app/#website",
-        url: "https://moviesandtvshows.vercel.app/",
+        "@id": "https://moviesntvshows.netlify.app/#website",
+        url: "https://moviesntvshows.netlify.app/",
         name: "Movies & Tv Shows™ – Hindi Dubbed Section",
         description:
           "",
-        publisher: { "@id": "https://moviesandtvshows.vercel.app/#organization" },
+        publisher: { "@id": "https://moviesntvshows.netlify.app/#organization" },
         potentialAction: [
           {
             "@type": "SearchAction",
             target: {
               "@type": "EntryPoint",
               urlTemplate:
-                "https://moviesandtvshows.vercel.app/?s={search_term_string}",
+                "https://moviesntvshows.netlify.app/?s={search_term_string}",
             },
             "query-input": "required name=search_term_string",
           },
@@ -225,21 +225,21 @@ export default function hindiDubbed({ hindiDubbedData }) {
       },
       {
         "@type": "Organization",
-        "@id": "https://moviesandtvshows.vercel.app/#organization",
+        "@id": "https://moviesntvshows.netlify.app/#organization",
         name: "Movies & Tv Shows™ – Hindi Dubbed Section",
-        url: "https://moviesandtvshows.vercel.app/",
+        url: "https://moviesntvshows.netlify.app/",
         logo: {
           "@type": "ImageObject",
           inLanguage: "en-US",
-          "@id": "https://moviesandtvshows.vercel.app/#logo",
-          url: "https://moviesandtvshows.vercel.app/logo.png",
-          contentUrl: "https://moviesandtvshows.vercel.app/logo.png",
+          "@id": "https://moviesntvshows.netlify.app/#logo",
+          url: "https://moviesntvshows.netlify.app/logo.png",
+          contentUrl: "https://moviesntvshows.netlify.app/logo.png",
           width: 280,
           height: 100,
           caption: "Movies & Tv Shows™ – Hindi Dubbed Section",
         },
         image: {
-          "@id": "https://moviesandtvshows.vercel.app/#logo",
+          "@id": "https://moviesntvshows.netlify.app/#logo",
         },
       },
     ],
@@ -254,7 +254,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -295,7 +295,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
           name="description"
           content="Stream HD movies and TV series for free on Movies & Tv Shows™. Explore, stream, and download full-length movies and shows in HD quality without registration."
         />
-        <link rel="canonical" href="https://moviesandtvshows.vercel.app/hindiDubbed" />
+        <link rel="canonical" href="https://moviesntvshows.netlify.app/hindiDubbed" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
@@ -304,7 +304,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
         />
         <meta
           property="og:url"
-          content="https://moviesandtvshows.vercel.app/hindiDubbed"
+          content="https://moviesntvshows.netlify.app/hindiDubbed"
         />
         <meta
           property="og:site_name"
@@ -312,7 +312,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
         />
         <meta
           property="og:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -329,7 +329,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
           rel="sitemap"
           type="application/xml"
           title="Sitemap"
-          href="https://moviesandtvshows.vercel.app/sitemap.xml"
+          href="https://moviesntvshows.netlify.app/sitemap.xml"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -342,7 +342,7 @@ export default function hindiDubbed({ hindiDubbedData }) {
         />
         <meta
           name="twitter:image"
-          content="https://moviesandtvshows.vercel.app/og_image.jpg"
+          content="https://moviesntvshows.netlify.app/og_image.jpg"
         />
         <meta
           name="google-site-verification"
