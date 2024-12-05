@@ -260,7 +260,7 @@ export default function HomePage({ allData }) {
    {/* <header className="flex flex-col sm:flex-row items-center justify-center sm:justify-between h-auto sm:h-[70vh] p-5 bg-blue-600"> */}
      {/* Hero Image Section */}
        <Image
-       src="/logo.png"
+       src="https://moviesntvshows.netlify.app/logo.png"
        alt="Movies & Tv Shows"
        className=" items-center justify-center h-auto sm:h-[30vh] p-2 "
        width={500}
