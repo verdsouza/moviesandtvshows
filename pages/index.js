@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from "react";
 import path from "path";
 import fs from "fs/promises";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
+import Image from 'next/image';
 import SocialSharing from "../components/SocialSharing";
 
 import mainStyles from "@styles/styles.module.css";
@@ -15,33 +16,19 @@ function generateSlug(title) {
     .replace(/^-+|-+$/g, ""); // Remove leading/trailing dashes
 }
 
-// Function to format the current date and time
-const getFormattedDate = () => {
-  const today = new Date();
-  const options = {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  };
-  return today.toLocaleString("en-GB", options); // Adjust locale as needed
-};
 
 export async function getStaticProps() {
   const categories = [
-   "movies", 
-   "tvshow", 
-   "hindiDubbed", 
-   "adult"
+    "movies",
+    "tvshow",
+    "hindiDubbed",
+    "adult",
+ 
   ];
   const allData = {};
-  let category = ""; // Declare category outside the loop
 
   try {
-    for (category of categories) { // Assign value to category here
+    for (const category of categories) {
       const filePath = path.join(process.cwd(), "public", `${category}.json`);
       const jsonData = await fs.readFile(filePath, "utf-8");
       const parsedData = JSON.parse(jsonData);
@@ -49,7 +36,7 @@ export async function getStaticProps() {
       allData[category] = Array.isArray(parsedData) ? parsedData.slice(0, 5) : [];
     }
   } catch (error) {
-    console.error(`Error loading data for category ${category}:`, error); // category will be accessible here
+    console.error(`Error loading data for category ${category}:`, error);
   }
 
   return {
@@ -58,7 +45,6 @@ export async function getStaticProps() {
     },
   };
 }
-
 
 
 const soap2daySchema = JSON.stringify({
@@ -151,35 +137,10 @@ const soap2daySchema = JSON.stringify({
   ],
 });
 
-
-
 export default function HomePage({ allData }) {
-  useEffect(() => {
-    // Dynamically load the Ko-fi widget script
-    const kofiScript = document.createElement('script');
-    kofiScript.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
-    kofiScript.async = true;
-
-    kofiScript.onload = () => {
-      console.log("Ko-fi widget loaded.");
-      if (typeof kofiWidgetOverlay !== 'undefined') {
-        kofiWidgetOverlay.draw('payat', {
-          'type': 'floating-chat',
-          'floating-chat.donateButton.text': 'Support me',
-          'floating-chat.donateButton.background-color': '#00b9fe',
-          'floating-chat.donateButton.text-color': '#fff'
-        });
-      }
-    };
-
-    document.body.appendChild(kofiScript);
-
-    return () => {
-      document.body.removeChild(kofiScript);
-    };
-  }, []);
  
 
+  
   return (
     <>
     <Head>
@@ -189,7 +150,7 @@ export default function HomePage({ allData }) {
       rel="sitemap"
       type="application/xml"
       title="Sitemap"
-      href="https://moviesandtvshows.vercel.app/sitemap.xml"
+      href="https://moviesntvshows.netlify.app/sitemap.xml"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -213,7 +174,7 @@ export default function HomePage({ allData }) {
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="googlebot" content="index,follow" />
     <meta name="revisit-after" content="1 days" />
-    <m eta name="referrer" content="origin" />
+    <meta name="referrer" content="origin" />
     <meta
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
@@ -227,21 +188,21 @@ export default function HomePage({ allData }) {
       name="description"
       content="Stream HD movies and TV series for free on Movies & Tv Shows™. Explore, stream, and download full-length movies and shows in HD quality without registration."
     />
-    <link rel="canonical" href="https://moviesandtvshows.vercel.app/" />
+    <link rel="canonical" href="https://moviesntvshows.netlify.app/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
       content=" Movies & Tv Shows™ - Online. Stream. Download. "
     />
-    <meta property="og:url" content="https://moviesandtvshows.vercel.app" />
+    <meta property="og:url" content="https://moviesntvshows.netlify.app" />
     <meta
       property="og:site_name"
       content=" Movies & Tv Shows™ - Online. Stream. Download. "
     />
     <meta
       property="og:image"
-      content="https://moviesandtvshows.vercel.app/og_image.jpg"
+      content="https://moviesntvshows.netlify.app/og_image.jpg"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -258,7 +219,7 @@ export default function HomePage({ allData }) {
       rel="sitemap"
       type="application/xml"
       title="Sitemap"
-      href="https://moviesandtvshows.vercel.app/sitemap.xml"
+      href="https://moviesntvshows.netlify.app/sitemap.xml"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -271,11 +232,11 @@ export default function HomePage({ allData }) {
     />
     <meta
       name="twitter:image"
-      content="https://moviesandtvshows.vercel.app/og_image.jpg"
+      content="https://moviesntvshows.netlify.app/og_image.jpg"
     />
     <meta
       name="google-site-verification"
-      content="RNN2teFhD-lV1TQ9qcLQiSO5BLBB4DmztyYJS6QLqDg"
+      content="BZNZaUyoS1nXyRfa99f4VJ3ABKZUZhkKB0pZ3DU3L8s"
     />
 
     <meta
@@ -287,59 +248,48 @@ export default function HomePage({ allData }) {
       content="dm3bs67ukdegz9qik"
     />
     <meta name="monetag" content="98a412cb5612b9188cd76b9744304b6c" />
- 
     <script
     type="application/ld+json"
     dangerouslySetInnerHTML={{ __html: soap2daySchema }}
-  />
+  />  
+  
   </Head>
   <SocialSharing />
     <div style={styles.container}>
    
-    {/* <header className="flex flex-col sm:flex-row items-center justify-center sm:justify-between h-auto sm:h-[70vh] p-5 bg-blue-600"> */}
-      {/* Hero Image Section */}
-        <Image
-        src="/logo.png"
-        alt="Movies & Tv Shows"
-        className=" items-center justify-center h-auto sm:h-[30vh] p-2 "
-        width={500}
-        height={300}
+    <header style={styles.hero}>
+    <div style={styles.heroImageContainer}>
+    <Image
+        src="/og_image.jpg"
+        alt="Hero Background"
+        // layout="fill"
+        objectFit="cover"
+        priority // Prioritize loading this image
+        width={1200} // Adjust the width according to your needs
+        height={750} // Adjust the height according to your needs
         quality={90}
-        loading="lazy"
         style={{
-          // width: "500px",
-          // height: "300px",
-           margin: "auto",
-          // marginTop: "50px",
-          marginBottom: "20px",
-          borderRadius: "50px",
-          boxShadow: "0 0 10px 0 #000",
-          filter: "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)",
+          // height: "200px",
+          // width: "100%",
+          // objectFit: "cover",
+         
+          filter:
+          "contrast(1.2) saturate(1.3) brightness(1.1) hue-rotate(0deg)",
         }}
-      /> 
-
-      {/* Hero Content Section */}
-      <div className="w-full sm:w-[100%] flex flex-col items-center justify-center p-5 bg-blue-600 text-white text-center sm:ml-5 rounded-lg mt-5 sm:mt-0"     style={{ textShadow: "1px 1px 5px #000", marginTop: "50px",}}>
-        <h1
-          className="text-3xl sm:text-5xl font-bold mb-4"
-          style={{ textShadow: "1px 1px 5px #000" }}
-        >
-          Welcome to Movies & Tv Shows™
-        </h1>
-        <p
-          className="text-xl max-w-xl mb-4"
-          style={{ textShadow: "2px 2px 5px #000" }}
-        >
-          Your source for the latest updates across various categories.
-        </p>
-       
-      </div>
-    {/* </header> */}
-
-
-      <div className="categories">
+        // className="w-full sm:w-32 sm:h-20 rounded-md mb-4 sm:mb-0"
+      />
+    </div>
+  <div style={styles.heroTextContainer}>
+    <h1 style={styles.heroTitle}>Welcome to Movies & Tv Shows™</h1>
+    <p style={styles.heroDescription}>
+      Online. Stream. Download. Your source for the latest updates across various categories.
+    </p>
+  </div>
+</header>
+      
+      <div className="categories ">
   {Object.keys(allData).map((category) => (
-    <section key={category} className="category-section bg-gray-100 p-4 rounded-lg shadow-md"  style={{ marginBottom: "20px",}}> 
+    <section key={category} className="category-section bg-gray-100 p-4 rounded-lg shadow-md "  style={{ marginBottom: "20px",}}> 
       <h2 className="category-title text-4xl font-semibold text-blue-500 mb-5"
         style={{ textShadow: "3px 5px 5px #000", marginBottom:'20px'}}>
         <Link href={`/${category}`} className="no-underline hover:no-underline">
@@ -351,28 +301,39 @@ export default function HomePage({ allData }) {
           <div key={index} className="card bg-white p-4 rounded-lg shadow-md">
             <Link href={`/${category}/${generateSlug(item.title)}`} className="no-underline hover:no-underline">
               <div className="card-content flex flex-col md:flex-row gap-4">
-                <img
+                <Image
                   src={item.image1 || item.image}
                   alt={item.title}
+                  width={800} // Adjust the width according to your needs
+                  height={450} // Adjust the height according to your needs
+                  quality={90}
                   className="card-image w-full md:w-32 h-auto md:h-20 object-cover rounded-lg mb-4 md:mb-0"
+                  style={{
+                    // width: "250px", // Ensures the image is displayed at this width
+                    // height: "150px", // Ensures the image is displayed at this height
+                    // objectFit: "cover", // Ensures the image covers the dimensions
+                    // margin: "auto",
+                    // marginTop: '50px',
+                    // marginBottom: '20px',
+                    boxShadow: "0 0 10px 0 #000", // Shadow effect
+                    filter:
+                      "contrast(1.1) saturate(1.1) brightness(1.0) hue-rotate(0deg)", // Image filter effects
+                  }}
                 />
                 <div className="card-text">
                   <h3 className="card-title text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="card-description text-gray-600 text-base">
-                            {item.synopsis}
-                          </p>
+                  <p className="card-description text-gray-600 text-base">{item.synopsis}</p>
                 </div>
               </div>
             </Link>
-            <small className="item-footer text-sm text-gray-500 mt-2">
-              {/* {item.date} - {item.time} | Courtesy: {item.courtesy} */}
-              Upload Date: {item.year}
+            <small className="item-footer text-lg font-bold text-gray-500 mt-2 ">
+            Upload Date: {item.year} | Language: {item.language}
             </small>
           </div>
         ))}
       </div>
       <Link href={`/${category}`} className="no-underline hover:no-underline">
-            <div className="animate-pulse view-all text-red-500 text-2xl font-semibold mt-5 ">View All  {category.charAt(0).toUpperCase() + category.slice(1)} Articles →</div>
+            <div className="animate-pulse view-all text-red-500 text-2xl font-semibold mt-5">View All  {category.charAt(0).toUpperCase() + category.slice(1)} Articles →</div>
       </Link>
     </section>
   ))}
@@ -390,34 +351,69 @@ const styles = {
     padding: "20px",
     fontFamily: "'Poppins', sans-serif",
     color: "#333",
-    
   },
   // hero: {
-  //   textAlign: "center",
-  //   padding: "40px 20px",
-  //   backgroundColor: "#007bff", // Blue hero background
-  //   color: "white",
-  //   borderRadius: "8px",
-  //   marginBottom: "40px",
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   // minHeight: "100vh", // Full viewport height for the hero section
+  //   backgroundImage: "url(https://moviesntvshows.netlify.app/og_image.jpg)", // Background image
+  //   backgroundSize: "cover", // Make the image cover the entire area
+  //   backgroundPosition: "center", // Center the image
+  //   backgroundRepeat: "no-repeat", // Prevent image repetition
+  //   color: "#fff", // White text for readability
+  //   textAlign: "center", // Center align text
+  //   padding: "20px", // Add padding for spacing
+  //   boxSizing: "border-box", // Include padding in element's total width/height
   // },
-  // heroTitle: {
-  //   fontSize: "3rem",
-  //   marginBottom: "10px",
-  // },
-  // heroDescription: {
-  //   fontSize: "1.5rem",
-  //   maxWidth: "800px",
-  //   margin: "0 auto",
-  // },
-  // dateTime: {
-  //   marginTop: "20px",
-  //   fontSize: "1.2rem",
-  //   backgroundColor: "rgba(0, 0, 0, 0.5)", // Dark background for date/time
-  //   padding: "10px 15px",
-  //   borderRadius: "5px",
-  //   color: "white",
-  //   display: "inline-block",
-  // },
+
+  // Optional: Responsive tweaks for smaller screens
+  "@media (max-width: 768px)": {
+    hero: {
+      padding: "15px", // Adjust padding for smaller screens
+      backgroundPosition: "top", // Focus on the top part of the image
+    },
+  },
+   
+  hero: {
+    position: "relative",
+    width: "100%",
+    height: "250px", // Reduced height for the hero section
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden",
+  },
+  heroImageContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 1,
+  },
+  heroTextContainer: {
+    position: "relative",
+    zIndex: 2,
+    textAlign: "center",
+    color: "#fff",
+    padding: "10px",
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+    borderRadius: "10px",
+  },
+  heroTitle: {
+    fontSize: "2.5rem",
+    fontWeight: "800",
+    marginTop: "10px",
+    marginBottom: "5px",
+    textShadow: "2px 2px 5px rgba(0, 0, 0, 0.7)",
+  },
+  heroDescription: {
+    fontSize: "1rem",
+    fontWeight: "400",
+    textShadow: "1px 1px 4px rgba(0, 0, 0, 0.6)",
+  },
   categories: {
     display: "flex",
     flexDirection: "column",
@@ -434,6 +430,7 @@ const styles = {
     fontWeight: "600",
     marginBottom: "20px",
     color: "#007bff", // Blue color for category title
+    
   },
   categoryContent: {
     display: "flex",
@@ -483,4 +480,3 @@ const styles = {
     marginTop: "20px",
   },
 };
-
